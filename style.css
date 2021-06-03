@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: au;
 }
 
 html {
-  font-size: 62.5%;
-  font-family: 'Roboto', sans-serif;
-  background-color: #fefae0;
-  color: #606c38;
+  font-family: "Roboto", sans-serif;
+  color: #b9314f;
+  display: flex;
+  text-align: center;
+  background-size: cover;
 }
 
 li {
@@ -21,9 +23,33 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  padding-bottom: 0.5em;
+}
+
+.section {
+  background-color: #414066;
+  display: flex;
+  height: auto;
+  width: auto;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0.2em;
+}
+
+.section:first-of-type {
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.section:nth-child(odd) {
+  background-color: #dda15e;
+}
+
 .header {
   background-color: #dda15e;
-  border-bottom: 1px solid #e2e8f0;
 }
 
 .navbar {
@@ -44,7 +70,7 @@ a {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #283618;
+  background-color: #b9314f;
 }
 
 .nav-menu {
@@ -60,7 +86,7 @@ a {
 .nav-link {
   font-size: 1.6rem;
   font-weight: 400;
-  color: #283618;
+  color: #b9314f;
 }
 
 .nav-link:hover {
@@ -70,7 +96,7 @@ a {
 .nav-logo {
   font-size: 2.1rem;
   font-weight: 500;
-  color: #283618;
+  color: #b9314f;
 }
 
 @media only screen and (max-width: 768px) {
@@ -79,7 +105,7 @@ a {
     left: -100%;
     top: 5rem;
     flex-direction: column;
-    background-color: #bc6c25;
+    background-color: #43aa8b;
     width: 100%;
     border-radius: 10px;
     text-align: center;
