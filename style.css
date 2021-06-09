@@ -4,15 +4,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: au;
 }
 
 html {
   font-family: "Roboto", sans-serif;
-  color: #b9314f;
-  display: flex;
-  text-align: center;
-  background-size: cover;
+  color: #268275;
 }
 
 li {
@@ -28,14 +24,18 @@ h1 {
 }
 
 .section {
-  background-color: #414066;
+  background-color: #7dc2ad;
   display: flex;
   height: auto;
   width: auto;
-  text-align: center;
   justify-content: center;
+  text-align: center;
   flex-direction: column;
-  padding: 0.2em;
+  padding: 1em 1em;
+}
+
+.section p {
+  padding: 0.5em 0;
 }
 
 .section:first-of-type {
@@ -45,11 +45,11 @@ h1 {
 }
 
 .section:nth-child(odd) {
-  background-color: #dda15e;
+  background-color: #a3c4bc;
 }
 
 .header {
-  background-color: #dda15e;
+  background-color: #a3c4bc;
 }
 
 .navbar {
