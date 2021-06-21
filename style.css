@@ -4,20 +4,25 @@
 html,
 body {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
   margin: 0px;
-  color: #7dc2ad;
+  color: #474747;
   font-weight: 600;
-  font-family: "segoe ui";
-  height: 100%;
+  font-family: "vogue";
+}
+
+body > * {
+  flex-shrink: 0;
 }
 
 .nav {
   height: 50px;
   width: 100%;
-  background-color: #f2dda4;
+  background-color: #fff;
   position: relative;
 }
 
@@ -45,12 +50,12 @@ body {
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
-  color: #f2dda4;
+  color: #474747;
 }
 
 .nav > .nav-links > a:hover {
-  background-color: #e7efc5;
-  color: #f2dda4;
+  background-color: #bfd7b5;
+  color: #fff;
 }
 
 .nav > #nav-check {
@@ -84,7 +89,7 @@ body {
     position: absolute;
     display: block;
     width: 100%;
-    background-color: #a3c4bc;
+    background-color: #bfd7b5;
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
@@ -106,5 +111,55 @@ body {
 
 .main {
   color: #474747;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main h1 {
+  padding: 0.5em 0 0 0;
+}
+
+.section {
   background-color: #bfd7b5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section form {
+  padding-bottom: 0.5em;
+}
+
+.section:nth-child(even) {
+  background-color: #fff;
+}
+
+.section img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 1em;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 992px) {
+  .section:nth-child(odd) {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+  }
+  .section:nth-child(odd) h1,
+  h3,
+  img {
+    padding: 0 1em;
+  }
+  .section:nth-child(odd) img {
+    padding-top;
+    padding: 1em 1em 0 1em;
+  }
 }
